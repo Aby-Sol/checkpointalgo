@@ -1,0 +1,21 @@
+ALGORITHM algorithm_Checkpoint
+VAR
+    S=STRING;
+    L,V,W,i=INTEGER:=0;
+
+BEGIN
+    write ("write a sentence that ends with '.'")
+    Read (S)
+    While (ch[i]!=".") Do 
+        L:=L+1;
+        i:=i+1;
+            If 
+            (ch[i]= "a" or "e" or "i" or "o" or "u") then V:=V+1;
+            Else if (ch[i]=" ") then W:=W+1;
+            End if;
+    W:=W+1;
+   If (Ch[i]=".") then L:=L+1;
+    Write ("The length of the sentence is: "L, "The number of voyals is: "V, "the number of words is:",W)
+
+
+END

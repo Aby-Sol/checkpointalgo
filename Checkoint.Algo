@@ -1,0 +1,18 @@
+ALGORITHM algorithm_checkpoint
+VAR
+    S=STRING;
+    L,W,V,i=INTEGER:=0;
+BEGIN
+Write ("Write a sentence that ends with a point.");
+Read (S);
+L:=Length(S);
+FOR i FROM 0 TO L step 1  DO
+    SWITCH (S[i]) DO
+        case " ", "." : W:=W+1; break
+        case "a","e","i";"o","u" : V:=V+1, break
+    END_SWITCH
+END_FOR
+Write ("The length of the sentence is: " L);
+Write ("The number of words in this sentence is :", W);
+Write ("The number of voyals in this sentence is: ", V);
+END
